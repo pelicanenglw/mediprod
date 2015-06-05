@@ -1,0 +1,176 @@
+{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"Client": {
+				"panelColor": "#996699",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 38,
+						"Y": 107
+					},
+					"pathVisible": true
+				}
+			},
+			"Patient": {
+				"panelColor": "#76923C",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 440,
+						"Y": 209
+					},
+					"pathVisible": true
+				}
+			},
+			"Event": {
+				"panelColor": "#76923C",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 918,
+						"Y": 354
+					},
+					"pathVisible": true
+				}
+			}
+		},
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 0
+		}
+	},
+	"dataClasses": [
+		{
+			"collectionName": "ClientCollection",
+			"className": "Client",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"type": "long",
+					"autosequence": "true",
+					"unique": "true",
+					"primKey": "true"
+				},
+				{
+					"name": "Name",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				},
+				{
+					"name": "patients",
+					"scope": "public",
+					"reversePath": true,
+					"path": "client",
+					"type": "PatientCollection",
+					"kind": "relatedEntities"
+				}
+			]
+		},
+		{
+			"collectionName": "PatientCollection",
+			"className": "Patient",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"type": "long",
+					"autosequence": "true",
+					"unique": "true",
+					"primKey": "true"
+				},
+				{
+					"name": "name",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				},
+				{
+					"name": "weight",
+					"scope": "public",
+					"type": "number",
+					"kind": "storage"
+				},
+				{
+					"name": "species",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				},
+				{
+					"name": "client",
+					"kind": "relatedEntity",
+					"type": "Client",
+					"path": "Client",
+					"scope": "public"
+				},
+				{
+					"name": "picture",
+					"scope": "public",
+					"type": "image",
+					"kind": "storage"
+				},
+				{
+					"name": "reminders",
+					"scope": "public",
+					"type": "number",
+					"kind": "storage"
+				},
+				{
+					"name": "events",
+					"scope": "public",
+					"reversePath": true,
+					"path": "patient",
+					"type": "EventCollection",
+					"kind": "relatedEntities"
+				}
+			]
+		},
+		{
+			"collectionName": "EventCollection",
+			"className": "Event",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"type": "long",
+					"autosequence": "true",
+					"unique": "true",
+					"primKey": "true"
+				},
+				{
+					"name": "name",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				},
+				{
+					"name": "date",
+					"scope": "public",
+					"type": "date",
+					"kind": "storage"
+				},
+				{
+					"name": "overdue",
+					"scope": "public",
+					"type": "bool",
+					"kind": "storage"
+				},
+				{
+					"name": "patient",
+					"kind": "relatedEntity",
+					"type": "Patient",
+					"path": "Patient",
+					"scope": "public"
+				}
+			],
+			"matchTable": "Events"
+		}
+	],
+	"type": []
+}

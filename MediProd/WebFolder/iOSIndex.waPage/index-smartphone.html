@@ -1,0 +1,51 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>index-smartphone</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="generator" content="Wakanda GUIDesigner"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="WAF.catalog" content="Client,Patient,Event"/>
+        <meta name="WAF.packageJson"/>
+    	<meta name="wakanda-version" content="10 build 10.184651"/>
+		<meta name="wakanda-build" content="10.184651"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1.0"/>
+		<meta id="waf-interface-css" name="WAF.config.loadCSS" content="styles/index-smartphone.css"/>
+		<meta id="waf-project-css" name="WAF.config.loadCSS" content="/application.css"/>
+
+		<meta data-type="dataSource" data-lib="WAF" data-source="Patient" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="patient" content="patient"/>
+		<meta data-type="dataSource" data-lib="WAF" data-source="Event" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="event" content="event"/>
+		<meta data-type="dataSource" data-lib="WAF" data-source="Client" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="client" content="client"/><meta name="WAF.config.modules" content="smartphone"/>
+		<meta data-type="dataSource" data-lib="WAF" data-source="client.patients" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="patients" content="patients"/>
+		<meta data-type="dataSource" data-lib="WAF" data-source="patient.events" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="events1" content="events1"/>
+		<meta data-type="dataSource" data-lib="WAF" data-source="patient.events" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="events0" content="events0"/>
+		</head>
+    <body id="waf-body" data-type="document" data-lib="WAF" data-entire-model="false" data-platform="smartphone" data-viewport-width="device-width" data-viewport-initial-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-minimum-scale="1.0" data-apple-meta-tags-status-bar="default" data-workspace-device="smartphone" data-workspace-orientation="portrait" data-workspace-width="320" data-workspace-height="480" data-group="[['tabView1','menuBar1','container2','container3','container4']]" data-theme="cupertino" data-title="index-smartphone" style="bottom:;right:;visibility:hidden;">
+	<div id="container1" data-type="container" data-lib="WAF" class="waf-widget waf-container waf-container-level-0 waf-level-0" data-label="" data-label-position="top" data-constraint-left="true" data-constraint-top="true">
+ 	 		<input id="textField1" data-type="textField" data-lib="WAF" type="text" data-binding="client.Name" class="waf-widget waf-textField" data-label="Name" data-label-position="left" data-multiline="false" data-readOnly="false" data-password="false" data-datapicker-on="true" data-datapicker-icon-only="false" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false"/>
+ 	 		<label id="label1" data-type="label" data-lib="WAF" for="textField1" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-textfield" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false">Name</label>
+ 	 						<div id="tabView1" data-type="tabView" data-lib="WAF" class="waf-widget waf-tabView" data-padding="0" data-menu-position="top left" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-linked-tag="menuBar1,container2,container3,container4">
+	 	 	 	<ul id="menuBar1" data-type="menuBar" data-lib="WAF" class="waf-tabView-menuBar waf-tabView-menuBar-top-left waf-widget waf-menuBar" data-display="horizontal" data-subMenuShow="hover" data-tab-margin="0" data-context="['protected']" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="true" data-linked-tag="tabView1">
+	 	 	 	 	<li id="menuItem1" data-type="menuItem" data-lib="WAF" data-context="['protected','allowDrop','allowRemove']" class="waf-widget waf-menuItem waf-menuItem-level-0 waf-level-0" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-linked-tag="richText1,container2" data-text="pets">
+	 	 	 	 	 	<div id="richText1" data-type="richText" data-lib="WAF" class="waf-widget waf-richText" data-autoWidth="false" data-label="" data-label-position="left" data-target="_blank" data-overflow="Hidden" data-plainText="true" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-linked-tag="menuItem1">pets</div>
+ 	 	 	 	 	</li>
+ 	 	 	 		<li id="menuItem2" data-type="menuItem" data-lib="WAF" data-context="['protected','allowDrop','allowRemove']" class="waf-widget waf-menuItem waf-menuItem-level-0 waf-level-0" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-linked-tag="richText2,container3" data-text="events">
+	 	 	 	 	 	<div id="richText2" data-type="richText" data-lib="WAF" class="waf-widget waf-richText" data-autoWidth="false" data-label="" data-label-position="left" data-target="_blank" data-overflow="Hidden" data-plainText="true" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-linked-tag="menuItem2">events</div>
+ 	 	 	 	 	</li>
+ 	 	 	 		<li id="menuItem3" data-type="menuItem" data-lib="WAF" data-context="['protected','allowDrop','allowRemove']" class="waf-widget waf-menuItem waf-menuItem-level-0 waf-level-0" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-linked-tag="richText3,container4" data-text="education">
+	 	 	 	 	 	<div id="richText3" data-type="richText" data-lib="WAF" class="waf-widget waf-richText" data-autoWidth="false" data-label="" data-label-position="left" data-target="_blank" data-overflow="Hidden" data-plainText="true" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false" data-linked-tag="menuItem3">education</div>
+ 	 	 	 	 	</li>
+ 	 	 	 	</ul>
+ 	 	 		<div id="container2" data-type="container" data-lib="WAF" class="waf-widget waf-container waf-container-level-1 waf-level-1 waf-tabView-container-level-0" data-label="" data-label-position="top" data-context="['protected','allowDrop','allowBind','allowPaste']" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="true" data-constraint-right="true" data-linked-tag="menuItem1">
+	 	 	 	 	<div id="dataGrid2" data-type="dataGrid" data-lib="WAF" data-binding="patients" class="waf-widget waf-dataGrid" data-label="" data-label-position="top" data-selection-mode="single" data-display-error="true" data-footer-text="item(s)" data-column="[{'sourceAttID':'name','colID':'name','width':'80','title':'name'},{'sourceAttID':'species','colID':'species','width':'70','title':'species'},{'sourceAttID':'picture','colID':'picture','width':'90','title':'picture'},{'sourceAttID':'reminders','colID':'reminders','width':'90','title':'rem'}]" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false"></div>
+ 	 	 	 	</div>
+ 	 	 		<div id="container3" data-type="container" data-lib="WAF" class="waf-widget waf-container waf-container-level-1 waf-level-1 waf-tabView-container-level-0" data-label="" data-label-position="top" data-context="['protected','allowDrop','allowBind','allowPaste']" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="true" data-constraint-right="true" data-linked-tag="menuItem2">
+	 	 	 	 	<div id="dataGrid3" data-type="dataGrid" data-lib="WAF" data-binding="events0" class="waf-widget waf-dataGrid" data-label="" data-label-position="top" data-selection-mode="single" data-display-error="true" data-footer-text="item(s)" data-column="[{'sourceAttID':'name','colID':'name','width':'150','title':'name','type':'string'},{'sourceAttID':'date','colID':'date','width':'100','title':'date','type':'date'},{'sourceAttID':'overdue','colID':'overdue','width':'150','title':'overdue','type':'bool'}]" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="false" data-constraint-right="false"></div>
+ 	 	 	 	</div>
+ 	 	 		<div id="container4" data-type="container" data-lib="WAF" class="waf-widget waf-container waf-container-level-1 waf-level-1 waf-tabView-container-level-0" data-label="" data-label-position="top" data-context="['protected','allowDrop','allowBind','allowPaste']" data-constraint-left="true" data-constraint-top="true" data-constraint-bottom="true" data-constraint-right="true" data-linked-tag="menuItem3"></div>
+ 	 	 	
+ 	 	 	</div>
+ 	 	</div>
+	
+		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
+	</body>
+</html>
